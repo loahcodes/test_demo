@@ -1,7 +1,12 @@
+Onde aprendi: https://www.youtube.com/watch?v=eeuNAIZoWRU&ab_channel=Simplilearn
+
 A ideia do GIT é criarmos um repositório master onde ficarão as implementações em produção. Enquanto isso, podemos desenvolver um espécie de ambiente de testes para aprimoramentos, debugs e outras features desenvolvidas em branches secundárias. Apenas quando concluídas e prontas para entrar em produção mesclamos com a master.
 
--- git config --help
+- git config --help
 abre no navegador a documentação do git
+
+- git --version
+checar que versão do git temos instalada
 
 - mkdir <nome pasta>
 criar pasta de repositório
@@ -16,33 +21,39 @@ desloca pelos diretórios do pc
 - cd ..
 volta um estágio no caminho
 
--- git init
+- git init
 cria a branch master no local onde estamos
 
--- git status
+- git status
 resume o status dos itens na pasta do nosso repositório
 
 
 IDENTIFICAÇÃO
--- git config --global user.email "email"
+- git config --global user.email "email"
 identifica seu email para os logs
--- git config --global user.name "nome"
+- git config --global user.name "nome"
 identifica seu user name para os logs
 
 Se eu fosse usar só no meu pc, poderia criar como local e não global.
 Acredito que para usar no github, tem que ser o mesmo username que tem em (signed in as <nome>, no meu caso é loahcodes)
 
 
--- git add <nome arquivo>
+- git config --list
+checar as configurações atuais
+
+- git add <nome arquivo>
 passa a monitorar um arquivo na pasta do repositório
 
--- git commit -m "texto da msg resumo do log"
+- git commit -m "texto da msg resumo do log"
 commita uma mudança, aplica ela, permitindo criar uma mensagem com um breve resumo sobre o que foi alterado, tornando mais fácil acompanhar as mudanças.
 
--- git remote add origin <caminho repositório online>
+- git remote add origin <caminho repositório online>
 para linkar com um repositório remoto, o github por exemplo:
 git remote add origin https://github.com/loahcodes/test_demo.git
 
--- git push origin master
+- git push origin master
 envia arquivos para o origin, do master
 obs: mesmo tendo enviado os arquivos, as vezes o cash impede o navegador de perceber, basta ir em more tools > clear browsing data
+
+- git diff
+mostra a diferença nos arquivos entre o que tem commitado no repositório (ou pelo menos adicionado para commit) e o arquivo no estado atual.
