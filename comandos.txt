@@ -1,5 +1,8 @@
 A ideia do GIT é criarmos um repositório master onde ficarão as implementações em produção. Enquanto isso, podemos desenvolver um espécie de ambiente de testes para aprimoramentos, debugs e outras features desenvolvidas em branches secundárias. Apenas quando concluídas e prontas para entrar em produção mesclamos com a master.
 
+-- git config --help
+abre no navegador a documentação do git
+
 - mkdir <nome pasta>
 criar pasta de repositório
 por padrão vai ser criada logo em user, pois é onde estamos ao abrir o GIT bach
@@ -19,6 +22,18 @@ cria a branch master no local onde estamos
 -- git status
 resume o status dos itens na pasta do nosso repositório
 
+
+IDENTIFICAÇÃO
+-- git config --global user.email "email"
+identifica seu email para os logs
+-- git config --global user.name "nome"
+identifica seu user name para os logs
+
+Se eu fosse usar só no meu pc, poderia criar como local e não global.
+
+
 -- git add <nome arquivo>
 passa a monitorar um arquivo na pasta do repositório
 
+-- git commit -m "texto da msg resumo do log"
+commita uma mudança, aplica ela, permitindo criar uma mensagem com um breve resumo sobre o que foi alterado, tornando mais fácil acompanhar as mudanças.
