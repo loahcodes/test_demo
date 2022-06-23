@@ -30,6 +30,7 @@ identifica seu email para os logs
 identifica seu user name para os logs
 
 Se eu fosse usar só no meu pc, poderia criar como local e não global.
+Acredito que para usar no github, tem que ser o mesmo username que tem em (signed in as <nome>, no meu caso é loahcodes)
 
 
 -- git add <nome arquivo>
