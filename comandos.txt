@@ -8,6 +8,9 @@ abre no navegador a documentação do git
 - git --version
 checar que versão do git temos instalada
 
+- pwd
+mostra onde estou agora, o caminho.
+
 - mkdir <nome pasta>
 criar pasta de repositório
 por padrão vai ser criada logo em user, pois é onde estamos ao abrir o GIT bach
@@ -59,6 +62,9 @@ mostra todos os arquivos no branch/pasta
 para linkar com um repositório remoto, o github por exemplo:
 git remote add origin https://github.com/loahcodes/test_demo.git
 
+- git remote -v
+checar associação com repositorio remoto
+
 - git push origin master
 envia arquivos para o origin, do master
 obs: mesmo tendo enviado os arquivos, as vezes o cash impede o navegador de perceber, basta ir em more tools > clear browsing data
@@ -88,4 +94,8 @@ abre arquivo notepad
 - git log
 mostra o log de alterações
 
+*https x ssh git repository
+para ver, checar o vídeo, no tempo 01:02:20
+
 *.gitignore
+*https x ssh git repository
