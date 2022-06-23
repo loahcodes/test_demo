@@ -38,3 +38,10 @@ passa a monitorar um arquivo na pasta do repositório
 
 -- git commit -m "texto da msg resumo do log"
 commita uma mudança, aplica ela, permitindo criar uma mensagem com um breve resumo sobre o que foi alterado, tornando mais fácil acompanhar as mudanças.
+
+-- git remote add origin <caminho repositório online>
+para linkar com um repositório remoto, o github por exemplo:
+git remote add origin https://github.com/loahcodes/test_demo.git
+
+-- git push origin master
+envia arquivos para o origin, do master
