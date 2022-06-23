@@ -1,0 +1,24 @@
+A ideia do GIT é criarmos um repositório master onde ficarão as implementações em produção. Enquanto isso, podemos desenvolver um espécie de ambiente de testes para aprimoramentos, debugs e outras features desenvolvidas em branches secundárias. Apenas quando concluídas e prontas para entrar em produção mesclamos com a master.
+
+- mkdir <nome pasta>
+criar pasta de repositório
+por padrão vai ser criada logo em user, pois é onde estamos ao abrir o GIT bach
+
+- rmdir <nome pasta>
+remove pasta
+
+- cd <caminho>
+desloca pelos diretórios do pc
+
+- cd ..
+volta um estágio no caminho
+
+-- git init
+cria a branch master no local onde estamos
+
+-- git status
+resume o status dos itens na pasta do nosso repositório
+
+-- git add <nome arquivo>
+passa a monitorar um arquivo na pasta do repositório
+
