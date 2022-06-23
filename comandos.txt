@@ -27,6 +27,9 @@ cria a branch master no local onde estamos
 - git status
 resume o status dos itens na pasta do nosso repositório
 
+- ctrl + l
+limpa a tela
+
 
 IDENTIFICAÇÃO
 - git config --global user.email "email"
@@ -34,7 +37,6 @@ identifica seu email para os logs
 - git config --global user.name "nome"
 identifica seu user name para os logs
 
-Se eu fosse usar só no meu pc, poderia criar como local e não global.
 Acredito que para usar no github, tem que ser o mesmo username que tem em (signed in as <nome>, no meu caso é loahcodes)
 
 
@@ -43,6 +45,9 @@ checar as configurações atuais
 
 - git add <nome arquivo>
 passa a monitorar um arquivo na pasta do repositório
+
+- git add .
+adiciona todos os arquivos
 
 - git commit -m "texto da msg resumo do log"
 commita uma mudança, aplica ela, permitindo criar uma mensagem com um breve resumo sobre o que foi alterado, tornando mais fácil acompanhar as mudanças.
@@ -66,3 +71,16 @@ cria um novo branch
 
 - git checkout <nome branch>
 vai para o branch que você chamou
+
+- git merge <nome branch>
+usar o comando no local onde você quer seja mesclado e chamar no comando a branch que você quer trazer.
+ex:	se quer trazer a first_branch pra master
+	1o. - git checkout master
+	2o. - git merge first_branch
+assim, a master irá receber tudo o que há na first_branch.
+
+- touch <nome arquivo>
+cria arquivo nas pasta onde estamos
+
+- notepad <nome arquivo>
+abre arquivo notepad
