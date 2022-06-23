@@ -47,6 +47,9 @@ passa a monitorar um arquivo na pasta do repositório
 - git commit -m "texto da msg resumo do log"
 commita uma mudança, aplica ela, permitindo criar uma mensagem com um breve resumo sobre o que foi alterado, tornando mais fácil acompanhar as mudanças.
 
+- ls
+mostra todos os arquivos no branch/pasta
+
 - git remote add origin <caminho repositório online>
 para linkar com um repositório remoto, o github por exemplo:
 git remote add origin https://github.com/loahcodes/test_demo.git
@@ -57,3 +60,9 @@ obs: mesmo tendo enviado os arquivos, as vezes o cash impede o navegador de perc
 
 - git diff
 mostra a diferença nos arquivos entre o que tem commitado no repositório (ou pelo menos adicionado para commit) e o arquivo no estado atual.
+
+- git branch <nome branch>
+cria um novo branch
+
+- git checkout <nome branch>
+vai para o branch que você chamou
