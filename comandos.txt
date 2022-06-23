@@ -84,3 +84,8 @@ cria arquivo nas pasta onde estamos
 
 - notepad <nome arquivo>
 abre arquivo notepad
+
+- git log
+mostra o log de alterações
+
+*.gitignore
