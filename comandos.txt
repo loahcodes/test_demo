@@ -75,8 +75,17 @@ mostra a diferença nos arquivos entre o que tem commitado no repositório (ou p
 - git branch <nome branch>
 cria um novo branch
 
+- git branch -v
+para ver minhas branchs, a verde é a que estou agora
+
 - git checkout <nome branch>
 vai para o branch que você chamou
+
+TRABALHANDO COM BRANCHES
+- cria a branch para poder trabalhar nela sem mexer no original
+- faz toda a sua atividade
+- mescla com a original
+- deleta a branch
 
 - git merge <nome branch>
 usar o comando no local onde você quer seja mesclado e chamar no comando a branch que você quer trazer.
@@ -94,8 +103,24 @@ abre arquivo notepad
 - git log
 mostra o log de alterações
 
+- git log --pretty=online
+mostra os logs resumidos em 1 linha cada
+
+- git clone <url do repositório remoto>
+clona um repositório para outro
+
+- git reset --soft <hash do commit>
+desfaz os commits posteriores ao hash que indiquei.
+os arquivos continuam tendo sido mudados e adicionados, porém, não commitados.
+obs: fazer com parcimônia e de preferência apenas quando só você estava mexendo nos arquivos.
+
+- git revert <hash do commit>
+desfaz o commit do hash, apenas ele, e cria um commit indicando que o commit foi revertido.
+
+
+
+
 *https x ssh git repository
 para ver, checar o vídeo, no tempo 01:02:20
 
 *.gitignore
-*https x ssh git repository
