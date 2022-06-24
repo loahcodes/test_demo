@@ -83,7 +83,7 @@ para ver minhas branchs, a verde é a que estou agora
 vai para o branch que você chamou
 
 TRABALHANDO COM BRANCHES
-- (remoto) sincroniza com o remoto se necessário, pull.
+- (remoto) sincroniza com o remoto se necessário, clone ou pull
 - criar a branch para poder trabalhar nela sem mexer no original
 - fazer toda a sua atividade
 - testar
@@ -98,6 +98,9 @@ ex:	se quer trazer a first_branch pra master
 	1o. - git checkout master
 	2o. - git merge first_branch
 assim, a master irá receber tudo o que há na first_branch.
+
+- git clone <url do repositório remoto>
+clona um repositório para outro
 
 - git pull origin master
 git pull <remote> <branch>
@@ -117,9 +120,6 @@ mostra o log de alterações
 
 - git log --pretty=online
 mostra os logs resumidos em 1 linha cada
-
-- git clone <url do repositório remoto>
-clona um repositório para outro
 
 VOLTANDO NO TEMPO E RESOLVENDO CONFLITOS
 
@@ -143,3 +143,4 @@ exit the merge process and return to state before the merging began
 para ver, checar o vídeo, no tempo 01:02:20
 
 *.gitignore
+arquivo com nome de arquivos para o git não monitorar
