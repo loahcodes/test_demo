@@ -66,6 +66,7 @@ git remote add origin https://github.com/loahcodes/test_demo.git
 checar associação com repositorio remoto
 
 - git push origin master
+git push <remote> <branch>
 envia arquivos para o origin, do master
 obs: mesmo tendo enviado os arquivos, as vezes o cash impede o navegador de perceber, basta ir em more tools > clear browsing data
 
@@ -82,8 +83,10 @@ para ver minhas branchs, a verde é a que estou agora
 vai para o branch que você chamou
 
 TRABALHANDO COM BRANCHES
+- (remoto) sincroniza com o remoto se necessário, pull.
 - criar a branch para poder trabalhar nela sem mexer no original
 - fazer toda a sua atividade
+- testar
 - mesclar com a original
 - deletar a branch
 - enviar a alteração para o servidor (push)
@@ -95,6 +98,10 @@ ex:	se quer trazer a first_branch pra master
 	1o. - git checkout master
 	2o. - git merge first_branch
 assim, a master irá receber tudo o que há na first_branch.
+
+- git pull origin master
+git pull <remote> <branch>
+envia arquivos do origin, para o master
 
 - git branch -D <nome branch>
 deleta a branch, ter cuidado para não estar na branch que você quer deletar
@@ -114,6 +121,8 @@ mostra os logs resumidos em 1 linha cada
 - git clone <url do repositório remoto>
 clona um repositório para outro
 
+VOLTANDO NO TEMPO E RESOLVENDO CONFLITOS
+
 - git reset --soft <hash do commit>
 desfaz os commits posteriores ao hash que indiquei.
 os arquivos continuam tendo sido mudados e adicionados, porém, não commitados.
@@ -122,8 +131,13 @@ obs: fazer com parcimônia e de preferência apenas quando só você estava mexe
 - git revert <hash do commit>
 desfaz o commit do hash, apenas ele, e cria um commit indicando que o commit foi revertido.
 
+- git log --merge
+listar commits causando conflito de merge
 
+- git merge --abort
+exit the merge process and return to state before the merging began
 
+-----------------------------------------------
 
 *https x ssh git repository
 para ver, checar o vídeo, no tempo 01:02:20
