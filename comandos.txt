@@ -82,10 +82,12 @@ para ver minhas branchs, a verde é a que estou agora
 vai para o branch que você chamou
 
 TRABALHANDO COM BRANCHES
-- cria a branch para poder trabalhar nela sem mexer no original
-- faz toda a sua atividade
-- mescla com a original
-- deleta a branch
+- criar a branch para poder trabalhar nela sem mexer no original
+- fazer toda a sua atividade
+- mesclar com a original
+- deletar a branch
+- enviar a alteração para o servidor (push)
+*senão ele não vai saber que a branch foi deletada
 
 - git merge <nome branch>
 usar o comando no local onde você quer seja mesclado e chamar no comando a branch que você quer trazer.
@@ -93,6 +95,9 @@ ex:	se quer trazer a first_branch pra master
 	1o. - git checkout master
 	2o. - git merge first_branch
 assim, a master irá receber tudo o que há na first_branch.
+
+- git branch -D <nome branch>
+deleta a branch, ter cuidado para não estar na branch que você quer deletar
 
 - touch <nome arquivo>
 cria arquivo nas pasta onde estamos
